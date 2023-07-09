@@ -9,24 +9,6 @@
             <x-input-error :messages="$errors->get('name')" class="mt-2" />
         </div>
         
-         <!-- Mobile -->
-        <div>
-            <x-input-label for="mobile" :value="__('Mobile')" />
-            <x-text-input id="mobile" class="block mt-1 w-full" type="text" name="mobile" :value="old('mobile')" required autofocus autocomplete="mobile" />
-            <x-input-error :messages="$errors->get('mobile')" class="mt-2" />
-        </div>
-         
-          <!-- group -->
-          
-        <div>
-            <x-input-label for="group" :value="__('Group')" />
-            <select id="group" class="block mt-1 w-full" type="text" name="group">
-                <option value = "family">Family</option>
-                <option value = "friends">Friends</option>
-                <option value = "colleagues ">Colleagues </option>
-            </select>
-        </div>
-
         <!-- Email Address -->
         <div class="mt-4">
             <x-input-label for="email" :value="__('Email')" />

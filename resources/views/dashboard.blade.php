@@ -14,19 +14,4 @@
             </div>
         </div>
     </div>
-    
-    <table style="width: 30%">
-        <tr>
-          <th>Name</th>
-          <th>Mobile</th>
-          <th>Email</th>
-          <th>Created At</th>
-          <th>Updated At</th>
-        </tr>
-        <tr>
-          <td>January</td>
-          <td>$100</td>
-        </tr>
-    </table>
-    
 </x-app-layout>
