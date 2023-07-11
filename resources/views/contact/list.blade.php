@@ -86,8 +86,10 @@
     </tr>
    @endforeach
 </table>
+     
 
-</body>
 </html>
 
-
+<div>
+{{ $contacts->links() }}
+</div>

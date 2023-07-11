@@ -17,7 +17,11 @@ select[type=text] {
 </style>
 </head>
 <body>
-
+@if(session('success'))
+<div>
+{{ session('success') }}
+</div>
+@endif
 <h2>Padded input fields</h2>
 
 <form  method="post" action="{{ route('contact.store') }}">
@@ -25,10 +29,16 @@ select[type=text] {
      
     <label for="name">Name</label>
     <input type="text" id="name" name="name">
+    @error('name')
+    <div style="color: red;">{{ $message }}</div>
+    @enderror
     <label for="mobile">Mobile</label>
     <input type="text" id="mobile" name="mobile">
     <label for="email">Email</label>
     <input type="text" id="email" name="email">
+    @error('email')
+        <div style="color: red;">{{ $message }}</div>
+    @enderror
     <label for="email">Group</label>
     <select type ="text" name="group">
          <option value="0">--Select--</option>
